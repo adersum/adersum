@@ -3,9 +3,12 @@
     --color-principal: #FF5A5F;
     --color-primary-hover:#d64246;
     --color-verde:#04A75B;
+    --color-verde-hover:#06683a;
+
+    /* --color-verde-hover: #068349 */
     --color-negro: #444A47;
     --color-fondo: #F7F9FD;
-    --color-footer: #151515;
+    --color-footer:#151515;
 }
 
 *,::after, ::before{
@@ -36,6 +39,70 @@ a{
 ul,ol{
     list-style: none;
 }
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745; /* verde éxito */
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .toast.show {
+    display: block;
+    opacity: 1;
+  }
+
+.modal-carrito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .carrito-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .lista-productos {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    max-height: 300px; /* Ajusta a lo que creas que cubre 8 productos */
+    overflow-y: auto;
+  }
+  
+
+  .lista-productos li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .lista-productos::-webkit-scrollbar {
+    width: 6px;
+  }
+  .lista-productos::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
 
 img{
     width: 100%;
@@ -88,12 +155,36 @@ img{
     color: #fff;
     border-radius: 25px;
     text-align: center;
+    margin-top: 5px;
 }
 
 .btn-primary:hover{
     background: var(--color-primary-hover);
 }
 
+.btn-secondary{
+  background: var(--color-verde);
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.btn-secondary:hover{
+  background: var(--color-verde-hover);
+}
+
+.btn-tercer{
+  background: var(--color-principal);
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.btn-tercer:hover{
+  background: var(--color-primary-hover);
+}
 
 
 /*=================================
