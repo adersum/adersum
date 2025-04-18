@@ -233,7 +233,7 @@ img{
 }
 
 .header-menu .hm-logo{
-    width: 140px;
+    width: 100px;
 }
 
 .hm-menu{
@@ -754,4 +754,65 @@ footer .foo-row .foo-col ul li a:hover{
     }
 
     
+}
+
+.hm-sobre-nosotros {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.sobre-nosotros-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.img-nosotros {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.img-nosotros img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.texto-nosotros {
+    flex: 1 1 55%;
+}
+
+.subtitulo {
+    text-transform: uppercase;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.texto-nosotros h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #111;
+}
+
+.texto-nosotros h2 .resaltado {
+    color: var(--color-principal);
+}
+
+.texto-nosotros h4 {
+    color: #222;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.texto-nosotros p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
 }
